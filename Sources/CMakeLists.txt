@@ -9,7 +9,8 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "Clang"
 endif()
 
 # Includes
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Includes)
+include_directories(${CMAKE_SOURCE_DIR}/Includes)
+include_directories(${CMAKE_SOURCE_DIR}/Libraries/Hearthstonepp/Includes)
 include_directories(${CMAKE_SOURCE_DIR}/Libraries/glfw/include)
 include_directories(${CMAKE_SOURCE_DIR}/Libraries/imgui)
 include_directories(${CMAKE_SOURCE_DIR}/Libraries/SFML/include)
@@ -45,7 +46,7 @@ include_directories(
 
 # Sources
 file(GLOB_RECURSE headers
-    ${CMAKE_CURRENT_SOURCE_DIR}/Includes/*.h)
+    ${CMAKE_SOURCE_DIR}/Includes/*.h)
     
 file(GLOB_RECURSE sources
     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
@@ -71,8 +72,8 @@ target_compile_options(${target}
 )
 target_compile_definitions(${target}
     PRIVATE
-    IMAGES_DIR="${CMAKE_CURRENT_SOURCE_DIR}/Assets/Images/"
-    SOUNDS_DIR="${CMAKE_CURRENT_SOURCE_DIR}/Assets/Sounds/"
+    IMAGES_DIR="${CMAKE_SOURCE_DIR}/Assets/Images/"
+    SOUNDS_DIR="${CMAKE_SOURCE_DIR}/Assets/Sounds/"
 )
 
 # Link libraries
