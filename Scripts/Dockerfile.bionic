@@ -9,4 +9,4 @@ ADD . /app
 WORKDIR /app/build
 RUN cmake .. && \
     make -j`nproc` && \
-    make install && \
+    make install

@@ -14,7 +14,7 @@ matrix:
 configuration:
   - Release
 
-clone_folder: C:\Hearthstonep-GUI
+clone_folder: C:\Hearthstonepp-GUI
 
 install:
   - git submodule update --init
