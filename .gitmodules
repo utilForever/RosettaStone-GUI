@@ -1,3 +1,6 @@
 [submodule "Libraries\\Hearthstonepp"]
 	path = Libraries/Hearthstonepp
 	url = https://github.com/utilForever/Hearthstonepp
+[submodule "Libraries/better-enums"]
+	path = Libraries/better-enums
+	url = https://github.com/aantron/better-enums
