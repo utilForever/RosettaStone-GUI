@@ -17,7 +17,7 @@ configuration:
 clone_folder: C:\Hearthstonepp-GUI
 
 install:
-  - git submodule update --init
+  - git submodule update --init --recursive
   - ps: |
       $env:CMAKE_GENERATOR = "Visual Studio 15 2017 Win64"
 
