@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER Chris Ohk <utilforever@gmail.com>
 
 RUN apt-get update -yq && \
-    apt-get install -yq cmake
+    apt-get install -yq build-essential cmake lcov
 
 ADD . /app
 
