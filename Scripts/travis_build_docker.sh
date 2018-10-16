@@ -8,5 +8,5 @@ if [ $# -eq 0 ]
     docker run utilforever/hearthstoneppgui
 else
     docker build -f $1 -t utilforever/hearthstoneppgui:$2 .
-    docker run utilforever/hearthstoneppgui:$2 .
+    docker run utilforever/hearthstoneppgui:$2
 fi
